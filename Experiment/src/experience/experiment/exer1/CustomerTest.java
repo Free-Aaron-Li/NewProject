@@ -1,4 +1,4 @@
-package com.everythingwuhu.experiment.exer1;
+package experience.experiment.exer1;
 /*
  * @author: Aaron.Li
  * @date: 2022 - 02 - 10 - 下午4:16

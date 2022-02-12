@@ -1,12 +1,10 @@
-package com.everythingwuhu.exer2;
+package experience.exer2;
 /*
  * @author: Aaron.Li
  * @date: 2022 - 02 - 10 - 下午3:26
  * @project: untitled1
  * @version: JDK17.0.2
  */
-
-import jdk.swing.interop.SwingInterOpUtils;
 
 /**
  * @ClassName BoyGirlTest

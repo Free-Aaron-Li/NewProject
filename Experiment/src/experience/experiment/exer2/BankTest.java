@@ -1,4 +1,4 @@
-package com.everythingwuhu.experiment.exer2;
+package experience.experiment.exer2;
 /*
  * @author: Aaron.Li
  * @date: 2022 - 02 - 10 - 下午10:06
@@ -17,7 +17,7 @@ public class BankTest {
     public static void main(String[] args) {
         Bank bank = new Bank();
         bank.addCustomer("Jane", "Smith");
-        //给Jane一个余额2000
+      //给Jane一个余额2000
         bank.getCustomer(0).setAccount(new BankAccount(2000));
         //Jane支出了500
         bank.getCustomer(0).getAccount().withdraw(500);
@@ -26,5 +26,6 @@ public class BankTest {
         System.out.println("************************************************************************");
         bank.addCustomer("Aaron", "Li");
         System.out.println("bank number is:" + bank.getNumberOfCustomer());
+
     }
 }

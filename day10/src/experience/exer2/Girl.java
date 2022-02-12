@@ -1,6 +1,4 @@
-package com.everythingwuhu.exer2;
-
-import java.util.List;
+package experience.exer2;
 
 /*
  * @author: Aaron.Li
