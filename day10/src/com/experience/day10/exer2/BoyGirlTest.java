@@ -1,4 +1,4 @@
-package experience.exer2;
+package com.experience.day10.exer2;
 /*
  * @author: Aaron.Li
  * @date: 2022 - 02 - 10 - 下午3:26

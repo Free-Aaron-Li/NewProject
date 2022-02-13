@@ -1,4 +1,4 @@
-package experience.exer2;
+package com.experience.day10.exer2;
 
 /*
  * @author: Aaron.Li
