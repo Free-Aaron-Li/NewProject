@@ -6,7 +6,7 @@ package com.experience.day10.java2;
  * @version: JDK17.0.2
  */
 
-import com.experience.experiment.exer2.Bank;
+import com.experience.experiment.class2.Bank;
 
 import java.util.*;
 
@@ -43,7 +43,7 @@ public class PackageImportTest {
         Bank bank=new Bank();
         ArrayList list = new ArrayList();
         //全类名方式显示
-        com.experience.experiment.exer1.BankAccount one=new com.experience.experiment.exer1.BankAccount(0,1000,0.0123);
+        com.experience.experiment.class1.BankAccount one=new com.experience.experiment.class1.BankAccount(0,1000,0.0123);
         //out指向“import static java.lang.System.*;"
         out.println("hello");
         //同理：

@@ -1,4 +1,4 @@
-package com.experience.experiment.exer2;
+package com.experience.experiment.class2;
 /*
  * @author: Aaron.Li
  * @date: 2022 - 02 - 10 - 下午10:06
@@ -15,11 +15,11 @@ package com.experience.experiment.exer2;
  */
 public class BankTest {
     public static void main(String[] args) {
-        Bank bank = new Bank();
+        com.experience.experiment.class2.Bank bank = new com.experience.experiment.class2.Bank();
         //连续操作
         bank.addCustomer("Jane", "Smith");
       //给Jane一个余额2000
-        bank.getCustomer(0).setAccount(new BankAccount(2000));
+        bank.getCustomer(0).setAccount(new com.experience.experiment.class2.BankAccount(2000));
         //Jane支出了500
         bank.getCustomer(0).getAccount().withdraw(500);//注意“.”只能“.”出返回值对象里的，同时还要注意到权限关系。
         double balance = bank.getCustomer(0).getAccount().getBalance();

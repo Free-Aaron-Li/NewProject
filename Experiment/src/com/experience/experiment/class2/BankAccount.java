@@ -1,4 +1,4 @@
-package com.experience.experiment.exer2;
+package com.experience.experiment.class2;
 /*
  * @author: Aaron.Li
  * @date: 2022 - 02 - 10 - 下午4:45

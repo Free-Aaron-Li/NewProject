@@ -1,16 +1,16 @@
-package com.experience.experiment.exer1;
+package com.experience.experiment.class2;
 /*
  * @author: Aaron.Li
- * @date: 2022 - 02 - 10 - 下午4:10
+ * @date: 2022 - 02 - 10 - 下午4:47
  * @project: untitled1
  * @version: JDK17.0.2
  */
 
 /**
  * @ClassName Customer
- * @Description 关于银行的类模拟用户
+ * @Description exer1加强版
  * @Author Aaron-Li
- * @Date 2022 - 02 - 10 - 下午4:10
+ * @Date 2022 - 02 - 10 - 下午4:47
  * @Version JDK17
  */
 public class Customer {
@@ -27,15 +27,15 @@ public class Customer {
         this.account = account;
     }
 
-    public BankAccount getAccount() {
-        return account;
-    }
-
     public String getFirstName() {
         return firstName;
     }
 
     public String getLastName() {
         return lastName;
+    }
+
+    public BankAccount getAccount() {
+        return account;
     }
 }
