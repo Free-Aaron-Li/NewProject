@@ -36,9 +36,15 @@ public class Customer {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public char getGender() {
         return gender;
     }
+
+
 
     public void setGender(char gender) {
         this.gender = gender;
