@@ -26,6 +26,11 @@ public class GameObj {
     double speed;
     GameWin frame;
 
+    public GameObj(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     public GameObj() {
 
     }

@@ -7,6 +7,7 @@ package com.experience.project.otherproject01.obj;
  */
 
 import com.experience.project.otherproject01.GameWin;
+import com.experience.project.otherproject01.utils.GameUtils;
 
 import java.awt.*;
 
@@ -35,6 +36,12 @@ public class ShellObj extends GameObj{
     public void paintSelf(Graphics gImage) {
         super.paintSelf(gImage);
         y-=speed;
+        //我方子弹的越界消失，条件：y<0,改变后坐标（-100,100）
+        if(y<0){
+            this.x=-100;
+            this.y=100;
+            GameUtils.removeList.add(this);
+        }
     }
 
     @Override
