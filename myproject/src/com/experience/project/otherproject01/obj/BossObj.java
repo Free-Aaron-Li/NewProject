@@ -53,7 +53,7 @@ public class BossObj extends GameObj {
         gImage.fillRect(15,30,100,10);
         //血条的绘制
         gImage.setColor(Color.red);
-        gImage.fillRect(15,30,life*100/10,10);
+        gImage.fillRect(15,30,life*100/lifeInitial,10);
     }
 
     @Override
