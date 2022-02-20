@@ -15,15 +15,18 @@ import java.awt.*;
  * @Date 2022 - 02 - 18 - 下午12:51
  * @Version JDK17
  */
-public class ExplodeObj extends GameObj{
+public class ExplodeObj extends GameObj {
     //爆炸动画是由一系列静态图快速切换产生的效果
-    static Image[] pic =new Image[16];
+    static Image[] pic = new Image[16];
+    int explodeCount = 0;
+
     static {
 
         for (int i = 0; i < pic.length; i++) {
-
+            pic[i] = Toolkit.getDefaultToolkit().getImage("imgs/explode/e" + (i + 1) + ".gif");
         }
     }
+
     public ExplodeObj(int x, int y) {
         super(x, y);
     }
@@ -31,6 +34,10 @@ public class ExplodeObj extends GameObj{
     @Override
 
     public void paintSelf(Graphics gImage) {
-        super.paintSelf(gImage);
+        if (explodeCount < 16) {
+            img = pic[explodeCount];
+            super.paintSelf(gImage);
+            explodeCount++;
+        }
     }
 }

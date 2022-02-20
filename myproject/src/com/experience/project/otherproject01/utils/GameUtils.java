@@ -6,10 +6,7 @@ package com.experience.project.otherproject01.utils;
  * @version: JDK17.0.2
  */
 
-import com.experience.project.otherproject01.obj.BulletObj;
-import com.experience.project.otherproject01.obj.EnemyObj;
-import com.experience.project.otherproject01.obj.GameObj;
-import com.experience.project.otherproject01.obj.ShellObj;
+import com.experience.project.otherproject01.obj.*;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -26,36 +23,39 @@ import static java.awt.Font.BOLD;
  */
 public class GameUtils {
     //背景图片
-    public static Image bgImg=Toolkit.getDefaultToolkit().getImage("imgs/bg.jpg");
+    public static Image bgImg = Toolkit.getDefaultToolkit().getImage("imgs/bg.jpg");
     //boss图片
-    public static Image bossImg=Toolkit.getDefaultToolkit().getImage("imgs/boss.png");
+    public static Image bossImg = Toolkit.getDefaultToolkit().getImage("imgs/boss.png");
     //爆炸图片
-    public static Image explodeImg=Toolkit.getDefaultToolkit().getImage("imgs/explode/e6.gif");
+    public static Image explodeImg = Toolkit.getDefaultToolkit().getImage("imgs/explode/e6.gif");
     //爆炸图片1
-    public static Image explodeOneImg=Toolkit.getDefaultToolkit().getImage("imgs/explode/e10.gif");
+    public static Image explodeOneImg = Toolkit.getDefaultToolkit().getImage("imgs/explode/e10.gif");
     //战斗机图片
-    public static Image planeImg=Toolkit.getDefaultToolkit().getImage("imgs/plane.png");
+    public static Image planeImg = Toolkit.getDefaultToolkit().getImage("imgs/plane.png");
     //我方子弹图片
-    public static Image shellImg=Toolkit.getDefaultToolkit().getImage("imgs/bulletGreen.png");
+    public static Image shellImg = Toolkit.getDefaultToolkit().getImage("imgs/bulletGreen.png");
     //敌方子弹图片
-    public static Image bulletImg=Toolkit.getDefaultToolkit().getImage("imgs/bulletYellow.png");
+    public static Image bulletImg = Toolkit.getDefaultToolkit().getImage("imgs/bulletYellow.png");
     //敌机图片
-    public static Image enemyImg=Toolkit.getDefaultToolkit().getImage("imgs/enemy.png");
+    public static Image enemyImg = Toolkit.getDefaultToolkit().getImage("imgs/enemy.png");
     //要删除的元素集合
-    public static List<GameObj> removeList=new ArrayList<>();
+    public static List<GameObj> removeList = new ArrayList<>();
     //所有游戏物体集合
-    public static List<GameObj> gameObjList=new ArrayList<>();
+    public static List<GameObj> gameObjList = new ArrayList<>();
     //我方战机子弹集合
-    public static List<ShellObj> shellObjList=new ArrayList<>();
+    public static List<ShellObj> shellObjList = new ArrayList<>();
     //敌方战机子弹集合
-    public static List<BulletObj> bulletObjList=new ArrayList<>();
+    public static List<BulletObj> bulletObjList = new ArrayList<>();
     //敌机集合
-    public static List<EnemyObj> EnemyObjList=new ArrayList<>();
+    public static List<EnemyObj> EnemyObjList = new ArrayList<>();
+    //爆炸类集合
+    public static List<ExplodeObj> explodeObjList = new ArrayList<>();
+
     //绘制字符串工具类
     //参数依次为：画笔，要绘制的字符串，字体颜色，字体大小，字符串的位置。
-    public static void drawWord(Graphics gImage,String str,Color color,int size,int x,int y){
+    public static void drawWord(Graphics gImage, String str, Color color, int size, int x, int y) {
         gImage.setColor(color);
-        gImage.setFont(new Font("姑苏行书",Font.BOLD,size));
-        gImage.drawString(str,x,y);
+        gImage.setFont(new Font("姑苏行书", Font.BOLD, size));
+        gImage.drawString(str, x, y);
     }
 }

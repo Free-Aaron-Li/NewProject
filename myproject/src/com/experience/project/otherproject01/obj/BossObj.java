@@ -20,7 +20,7 @@ import java.awt.*;
  */
 public class BossObj extends GameObj {
     //定义一个生命值
-    int life = 100;
+    int life = 1;
 
     public BossObj(Image img, int x, int y, int width, int height, double speed, GameWin frame) {
         super(img, x, y, width, height, speed, frame);

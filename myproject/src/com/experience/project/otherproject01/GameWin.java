@@ -128,6 +128,8 @@ public class GameWin extends JFrame {
 //            gImage.drawString("开始游戏", 110, 300);
         }
         if (state == 1) {
+            //添加爆炸动图
+            GameUtils.gameObjList.addAll(GameUtils.explodeObjList);
             /**
              * @Description 游戏运行界面（动态）
              */
@@ -167,7 +169,7 @@ public class GameWin extends JFrame {
 
         //设置分数面板
         if (state == 1) {
-            GameUtils.drawWord(gImage, score + "分", Color.GREEN, 25, 0, 45);
+            GameUtils.drawWord(gImage, score + "分", Color.GREEN, 25, 0, 60);
             //GameUtils.drawWord(gImage, "生命,20,8,55);
         }
         g.drawImage(offScreenImage, 0, 0, null);
