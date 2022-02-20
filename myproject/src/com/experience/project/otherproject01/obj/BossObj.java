@@ -19,8 +19,10 @@ import java.awt.*;
  * @Version JDK17
  */
 public class BossObj extends GameObj {
-    //定义一个生命值
-    int life = 1;
+    //定义Boss血量初始值
+    int lifeInitial= 10;
+    //定义一个Boss血量
+    int life = 10;
 
     public BossObj(Image img, int x, int y, int width, int height, double speed, GameWin frame) {
         super(img, x, y, width, height, speed, frame);
@@ -46,6 +48,12 @@ public class BossObj extends GameObj {
                 GameWin.state=4;
             }
         }
+        //血条的白色背景
+        gImage.setColor(Color.white);
+        gImage.fillRect(15,30,100,10);
+        //血条的绘制
+        gImage.setColor(Color.red);
+        gImage.fillRect(15,30,life*100/10,10);
     }
 
     @Override
