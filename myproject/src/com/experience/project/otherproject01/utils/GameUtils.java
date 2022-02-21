@@ -23,21 +23,21 @@ import static java.awt.Font.BOLD;
  */
 public class GameUtils {
     //背景图片
-    public static Image bgImg = Toolkit.getDefaultToolkit().getImage("imgs/bg.jpg");
+    public static Image bgImg = Toolkit.getDefaultToolkit().getImage("/home/Aaron-Li/newJavaProject/NewProject/imgs/bg.jpg");
     //boss图片
-    public static Image bossImg = Toolkit.getDefaultToolkit().getImage("imgs/boss.png");
+    public static Image bossImg = Toolkit.getDefaultToolkit().getImage("/home/Aaron-Li/newJavaProject/NewProject/imgs/boss.png");
     //爆炸图片
-    public static Image explodeImg = Toolkit.getDefaultToolkit().getImage("imgs/explode/e6.gif");
+    public static Image explodeImg = Toolkit.getDefaultToolkit().getImage("/home/Aaron-Li/newJavaProject/NewProject/imgs/explode/e6.gif");
     //爆炸图片1
-    public static Image explodeOneImg = Toolkit.getDefaultToolkit().getImage("imgs/explode/e10.gif");
+    public static Image explodeOneImg = Toolkit.getDefaultToolkit().getImage("/home/Aaron-Li/newJavaProject/NewProject/imgs/explode/e10.gif");
     //战斗机图片
-    public static Image planeImg = Toolkit.getDefaultToolkit().getImage("imgs/plane.png");
+    public static Image planeImg = Toolkit.getDefaultToolkit().getImage("/home/Aaron-Li/newJavaProject/NewProject/imgs/plane.png");
     //我方子弹图片
-    public static Image shellImg = Toolkit.getDefaultToolkit().getImage("imgs/bulletGreen.png");
+    public static Image shellImg = Toolkit.getDefaultToolkit().getImage("/home/Aaron-Li/newJavaProject/NewProject/imgs/bulletGreen.png");
     //敌方子弹图片
-    public static Image bulletImg = Toolkit.getDefaultToolkit().getImage("imgs/bulletYellow.png");
+    public static Image bulletImg = Toolkit.getDefaultToolkit().getImage("/home/Aaron-Li/newJavaProject/NewProject/imgs/bulletYellow.png");
     //敌机图片
-    public static Image enemyImg = Toolkit.getDefaultToolkit().getImage("imgs/enemy.png");
+    public static Image enemyImg = Toolkit.getDefaultToolkit().getImage("/home/Aaron-Li/newJavaProject/NewProject/imgs/enemy.png");
     //要删除的元素集合
     public static List<GameObj> removeList = new ArrayList<>();
     //所有游戏物体集合

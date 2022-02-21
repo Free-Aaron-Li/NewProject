@@ -14,8 +14,8 @@ package com.experience.day11.java1;
  * @Version
  */
 public class Student extends Person{
-//    String name;
-//    int age;
+    String name;
+    //int age;
     String major;
 
     public Student(String name, int age, String major) {
@@ -24,16 +24,18 @@ public class Student extends Person{
         this.major = major;
     }
 
-    public Student(){
+    public Student() {
 
     }
-//    public void eat(){
-//        System.out.println("吃饭！");
-//    }
-//    public void sleep(){
-//        System.out.println("睡觉！");
-//    }
-    public void studying(){
+
+    public void eat() {
+        System.out.println("吃饭！");
+    }
+
+    public void sleep() {
+        System.out.println("睡觉！");
+    }
+    public void studying() {
         System.out.println("学习！");
     }
 }
