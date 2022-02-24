@@ -13,7 +13,7 @@ package com.experience.day11.java1;
  * @Date 2022 - 02 - 20 - 下午11:15
  * @Version JDK17
  */
-public class Person {
+public class Person extends Creature{
     String name;
     int age;
 

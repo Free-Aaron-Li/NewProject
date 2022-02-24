@@ -107,18 +107,20 @@ public class GameObj {
     public void setFrame(GameWin frame) {
         this.frame = frame;
     }
+
     /**
-    * @Description 方法
-    */
-    public void paintSelf(Graphics gImage){
-        gImage.drawImage(img,x,y,null);
+     * @Description 方法
+     */
+    public void paintSelf(Graphics gImage) {
+        gImage.drawImage(img, x, y, null);
     }
 
     /**
      * 获取自身体积方法，用于碰撞检测
+     *
      * @return 自身体积大小
      */
-    public Rectangle getRec(){
-        return new Rectangle(x,y,width,height);
+    public Rectangle getRec() {
+        return new Rectangle(x, y, width, height);
     }
 }

@@ -9,6 +9,7 @@ package com.experience.project.project02.ui;
 import com.experience.project.project02.bean.Customer;
 import com.experience.project.project02.service.CustomerList;
 import com.experience.project.project02.util.CMUtility;
+import jdk.jfr.Description;
 
 /**
  * @ClassName CustomerView
@@ -24,14 +25,9 @@ public class CustomerView {
         Customer customer = new Customer("张三", '男', 22, "23456789021", "34817@qq.com");
         customerList.addCustomer(customer);
     }
-
-    /**
-     * @author Aaron-Li
-     * @Description 显示用户界面操作
-     * @Date 上午11:19 - 022/2/16
-     * @Param a
-     * @Return a
-     */
+/**
+ * Description: 用户操作界面
+ */
     public void enterMainMenu() {
         boolean isFlag = true;
         while (isFlag) {
@@ -184,12 +180,12 @@ public class CustomerView {
     }
 
     /**
-     * @author Aaron-Li
-     * @Description 显示客户列表操作
-     * @Date 上午11:14 -2022/2/16
-     * @Param a
-     * @Return a
-     */
+      * @author Aaron-Li
+      * @Description 显示客户列表操作
+      * @Date 上午11:14 -2022/2/16
+      * @Param a
+      * @Return a
+      */
     private void listAllCustomers() {
         System.out.println("------------------客户列表------------------\n");
         int total = customerList.getTotal();

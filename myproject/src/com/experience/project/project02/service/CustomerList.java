@@ -7,6 +7,7 @@ package com.experience.project.project02.service;
  */
 
 import com.experience.project.project02.bean.Customer;
+import jdk.jfr.Description;
 
 /**
  * @ClassName CustomerList
@@ -90,6 +91,7 @@ public class CustomerList {
      * @Description 获取所有客户的信息
      * @Date 下午11:41 -2022/2/15
      * @Param a
+     * total
      * @Return a
      */
     public Customer[] getAllCusomers() {
@@ -99,6 +101,7 @@ public class CustomerList {
         }
         return custs;
     }
+
 
     /**
      * @author Aaron-Li

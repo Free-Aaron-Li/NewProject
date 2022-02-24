@@ -14,5 +14,7 @@ package com.experience.day11.java1;
  * @Version JDK17
  */
 public class Creature {
-
+public void breath(){
+    System.out.println("呼吸！");
+}
 }

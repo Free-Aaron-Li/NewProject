@@ -23,7 +23,7 @@ public class ExplodeObj extends GameObj {
     static {
 
         for (int i = 0; i < pic.length; i++) {
-            pic[i] = Toolkit.getDefaultToolkit().getImage("imgs/explode/e" + (i + 1) + ".gif");
+            pic[i] = Toolkit.getDefaultToolkit().getImage("/home/Aaron-Li/newJavaProject/NewProject/imgs/explode/e" + (i + 1) + ".gif");
         }
     }
 
