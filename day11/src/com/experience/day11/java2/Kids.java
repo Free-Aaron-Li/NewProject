@@ -14,7 +14,7 @@ package com.experience.day11.java2;
  * @Date 2022 - 02 - 24 - 下午3:28
  * @Version JDK17
  */
-public class Kids {
+public class Kids extends Mankind{
     private int yearsOld;
 
     public Kids(int yearsOld) {
