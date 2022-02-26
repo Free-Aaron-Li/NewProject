@@ -18,10 +18,15 @@ public class Student extends Person {
     int id = 1002;//学号；
 
     public Student() {
-
+        //这里默认会有super();无论删不删除，都会存在
     }
 
     public Student(String major) {
+        this.major = major;
+    }
+
+    public Student(String major, int age, String name) {
+        super(name, age);
         this.major = major;
     }
 
@@ -36,7 +41,7 @@ public class Student extends Person {
     public void show() {
         System.out.println("name is " + this.name + " age is " + super.age);
         System.out.println("id is " + id);//省略了this.
-        System.out.println("super.id is "+super.id);
+        System.out.println("super.id is " + super.id);
         eat();
         super.eat();
     }

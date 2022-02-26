@@ -14,11 +14,12 @@ package com.experience.day11.java7;
  * @Version JDK17
  */
 public class Person {
-    String name;
+    String name="Aaron";
     int age;
     int id = 1001;//身份证号
 
     public Person() {
+        System.out.println("我无处不在!");
     }
 
     public Person(String name) {
