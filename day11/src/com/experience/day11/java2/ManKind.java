@@ -16,14 +16,14 @@ package com.experience.day11.java2;
  * @Date 2022 - 02 - 24 - 下午1:49
  * @Version JDK17
  */
-public class Mankind {
+public class ManKind {
     private int sex;//性别
     private int salary;//薪资
 
-    public Mankind() {
+    public ManKind() {
     }
 
-    public Mankind(int sex, int salary) {
+    public ManKind(int sex, int salary) {
         this.sex = sex;
         this.salary = salary;
     }
@@ -56,4 +56,5 @@ public class Mankind {
     public void setSalary(int salary) {
         this.salary = salary;
     }
+
 }

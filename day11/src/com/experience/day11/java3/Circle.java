@@ -27,7 +27,12 @@ public class Circle {
     public void setRadius(double radius) {
         this.radius = radius;
     }
-    public double findArea(){
-        return getRadius()*getRadius()*3.14159;
+
+    /**
+     *
+     * @return 圆的表面积
+     */
+    public double findArea() {
+        return getRadius() * getRadius() * 3.14159;
     }
 }

@@ -14,15 +14,15 @@ package com.experience.day11.java2;
  * @Date 2022 - 02 - 24 - 下午3:28
  * @Version JDK17
  */
-public class Kids extends Mankind{
+public class Kids extends ManKind {
     private int yearsOld;
 
     public Kids(int yearsOld) {
         this.yearsOld = yearsOld;
     }
 
-    public void printAge(){
-        System.out.println("I am "+yearsOld+" years old.");
+    public void printAge() {
+        System.out.println("I am " + yearsOld + " years old.");
     }
 
     public int getYearsOld() {
@@ -33,4 +33,10 @@ public class Kids extends Mankind{
         this.yearsOld = yearsOld;
     }
 
+    /**
+     * 覆盖父类ManKind中定义的employeed()的方法
+     */
+    public void employeed() {
+        System.out.println("kids should study and no job!");
+    }
 }
