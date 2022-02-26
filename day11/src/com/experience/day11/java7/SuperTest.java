@@ -9,7 +9,7 @@ package com.experience.day11.java7;
 /**
  * @ClassName SuperTest
  * @Description super关键字的测试
- * super关键字的使用
+ * super关键字的使用（解决子父类冲突问题）
  * 1.super:理解为父类的（类比this）
  * 2.super可以用来调用：属性、方法、构造器。
  * 3.super的使用（调用属性和方法）
