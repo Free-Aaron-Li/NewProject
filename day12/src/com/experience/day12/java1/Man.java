@@ -15,6 +15,7 @@ package com.experience.day12.java1;
  */
 public class Man extends Person{
     boolean isSmoking;
+    int id=1002;
     public void earnMoney(){
         System.out.println("负责挣钱!");
     }

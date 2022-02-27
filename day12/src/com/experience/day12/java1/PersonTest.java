@@ -22,6 +22,7 @@ package com.experience.day12.java1;
  * 有了对象的多态以后，我们在编译期，只能调用父类中声明的方法，但在运行期，但在运行期，我们实际执行的是子类重写父类的方法。
  * 总结：编译看左边，运行看右边。
  * 4.多态性使用前提：①类的继承关系 ②方法的重写
+ * 5.对象的多态性，只适用于方法，不适用属性（编译和运行都看左边）。
  */
 public class PersonTest {
     public static void main(String[] args) {
@@ -41,5 +42,6 @@ public class PersonTest {
         testOne.eat();
         testOne.walk();
         //testOne.earnMoney();(⊙﹏⊙)b
+        System.out.println(testOne.id);//1001
     }
 }
