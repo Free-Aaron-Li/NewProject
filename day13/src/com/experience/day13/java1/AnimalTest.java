@@ -21,7 +21,7 @@ public class AnimalTest {
         test.func(new Cat());
     }
 
-    public void func(Animal animal) {
+    public void func(Animal animal) {//Animal animal=new Dog();
         animal.eat();
         animal.shout();
     }
