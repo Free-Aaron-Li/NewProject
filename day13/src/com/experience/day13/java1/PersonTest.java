@@ -65,7 +65,7 @@ public class PersonTest {
         if(testOne instanceof Woman){
             Woman womanOne=(Woman)testOne;
             womanOne.goShopping();
-            System.out.println("**************");
+            System.out.println("*******Woman*******");
         }
         if(testThree instanceof Man){
             System.out.println("*****Man*****");

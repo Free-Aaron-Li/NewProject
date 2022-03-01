@@ -1,4 +1,4 @@
-package com.experience.project.project02.service;
+package com.experience.project.project01.service;
 /*
  * @author: Aaron.Li
  * @date: 2022 - 02 - 13 - 下午10:28
@@ -6,8 +6,7 @@ package com.experience.project.project02.service;
  * @version: JDK17.0.2
  */
 
-import com.experience.project.project02.bean.Customer;
-import jdk.jfr.Description;
+import com.experience.project.project01.bean.Customer;
 
 /**
  * @ClassName CustomerList

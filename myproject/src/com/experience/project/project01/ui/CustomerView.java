@@ -1,4 +1,4 @@
-package com.experience.project.project02.ui;
+package com.experience.project.project01.ui;
 /*
  * @author: Aaron.Li
  * @date: 2022 - 02 - 13 - 下午10:31
@@ -6,10 +6,9 @@ package com.experience.project.project02.ui;
  * @version: JDK17.0.2
  */
 
-import com.experience.project.project02.bean.Customer;
-import com.experience.project.project02.service.CustomerList;
-import com.experience.project.project02.util.CMUtility;
-import jdk.jfr.Description;
+import com.experience.project.project01.bean.Customer;
+import com.experience.project.project01.service.CustomerList;
+import com.experience.project.project01.util.CMUtility;
 
 /**
  * @ClassName CustomerView
