@@ -1,4 +1,4 @@
-package com.experience.day12.java1;
+package java1;
 /*
  * @author: Aaron.Li
  * @date: 2022 - 02 - 27 - 下午1:10

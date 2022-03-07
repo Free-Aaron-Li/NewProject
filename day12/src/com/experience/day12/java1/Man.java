@@ -1,4 +1,4 @@
-package com.experience.day12.java1;
+package java1;
 /*
  * @author: Aaron.Li
  * @date: 2022 - 02 - 27 - 下午1:13
@@ -9,7 +9,7 @@ package com.experience.day12.java1;
 /**
  * @ClassName Man
  * @Description Person子类 多态性
- * @Author Aaron-Li
+ * @Author Aaron-Li 前端
  * @Date 2022 - 02 - 27 - 下午1:13
  * @Version JDK17
  */
