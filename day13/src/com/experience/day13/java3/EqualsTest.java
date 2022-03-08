@@ -1,4 +1,12 @@
-package com.experience.day13.java3;
+import com.experience.day13.java3.Customer;
+
+/*
+ * @Description: 
+ * @version: JDK17
+ * @Author: Aaron.Li
+ * @Date: 2022-03-02 15:29:39
+ * @LastEditTime: 2022-03-08 16:57:15
+ */
 
 /*
  * @author: Aaron.Li
@@ -25,25 +33,25 @@ package com.experience.day13.java3;
  */
 public class EqualsTest {
     public static void main(String[] args) {
-        //基本数据类型
+        // 基本数据类型
         int i = 10;
         int j = 10;
         double d = 10.0;
-        System.out.println(i == j);//true
+        System.out.println(i == j);// true
         System.out.println(i == d);
         char c = 10;
-        System.out.println(i == c);//true
+        System.out.println(i == c);// true
         char c1 = 'A';
         char c2 = 65;
-        System.out.println(c1 == c2);//true
-        //引用数据类型
-        Customer test = new Customer("tom",21);
-        Customer testOne = new Customer("tom",21);
-        String testThree=new String("Aaron.li");
-        String testFour=new String("Aaron.li");
-        System.out.println(test==testOne);//false
+        System.out.println(c1 == c2);// true
+        // 引用数据类型
+        Customer test = new Customer("tom", 21);
+        Customer testOne = new Customer("tom", 21);
+        String testThree = new String("Aaron.li");
+        String testFour = new String("Aaron.li");
+        System.out.println(test == testOne);// false
         System.out.println("*********");
-        System.out.println(test.equals(testOne));//false
-        System.out.println(testThree.equals(testFour));//true
+        System.out.println(test.equals(testOne));// false
+        System.out.println(testThree.equals(testFour));// true
     }
 }
