@@ -5,7 +5,7 @@ import com.experience.day13.java3.Customer;
  * @version: JDK17
  * @Author: Aaron.Li
  * @Date: 2022-03-02 15:29:39
- * @LastEditTime: 2022-03-08 19:43:16
+ * @LastEditTime: 2022-03-09 00:21:29
  */
 
 /*
@@ -55,4 +55,5 @@ public class EqualsTest {
         System.out.println(test.equals(testOne));// false
         System.out.println(testThree.equals(testFour));// true
     }
+
 }
