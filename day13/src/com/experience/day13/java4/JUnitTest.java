@@ -5,7 +5,7 @@ import org.junit.Test;
  * @version: JDK17
  * @Author: Aaron.Li
  * @Date: 2022-03-11 01:12:16
- * @LastEditTime: 2022-03-11 01:25:49
+ * @LastEditTime: 2022-03-11 01:35:35
  */
 /*
  * 1.创建Java类，进行单元测试
@@ -20,10 +20,19 @@ import org.junit.Test;
  * 5.声明好单元测试以后，就可以在方法体内测试相关的代码。
  */
 public class JUnitTest {
+    int num = 10;
+
     @Test
     public void testEquals() {
         String testOne = "MM";
         String testTwo = "MM";
         System.out.println(testOne.equals(testTwo));
+        System.out.println(num);
+    }
+
+    @Test
+    public void testToString(){
+        String testOne="MM";
+        System.out.println(testOne.toString());
     }
 }
