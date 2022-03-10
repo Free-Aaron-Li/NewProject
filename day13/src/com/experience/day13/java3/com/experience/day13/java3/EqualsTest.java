@@ -1,6 +1,5 @@
+package com.experience.day13.java3;
 import java.util.Date;
-
-import com.experience.day13.java3.Customer;
 
 /*
  * @Description: 
