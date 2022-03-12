@@ -1,3 +1,10 @@
+/*
+ * @Description: 
+ * @version: JDK17
+ * @Author: Aaron.Li
+ * @Date: 2022-02-17 15:11:40
+ * @LastEditTime: 2022-03-11 19:01:27
+ */
 package com.experience.project.otherproject01.utils;
 /*
  * @author: Aaron.Li
@@ -11,8 +18,6 @@ import com.experience.project.otherproject01.obj.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
-
-import static java.awt.Font.BOLD;
 
 /**
  * @ClassName GameUtils
