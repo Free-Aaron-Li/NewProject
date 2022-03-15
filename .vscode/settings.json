@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "d:\\VScodeWorkspace\\jar\\hamcrest-core-1.3.jar",
+        "d:\\VScodeWorkspace\\jar\\junit-4.13.2.jar"
+    ],
+    "java.project.sourcePaths": [
+        "day13/src/com/experience/day13/java4",
+        "Experiment/src/com/experience/experiment/class7"
+    ]
+}
