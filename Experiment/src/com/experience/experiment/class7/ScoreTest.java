@@ -5,7 +5,7 @@
  * @Author: Aaron.Li
  * @Date: 2022-03-15 17:30:51
  * @LastEditors: Aaron.Li
- * @LastEditTime: 2022-03-15 20:47:14
+ * @LastEditTime: 2022-03-16 20:39:14
  */
 import java.util.Scanner;
 import java.util.Vector;
@@ -34,7 +34,7 @@ public class ScoreTest {
         // scanner.close();
 
         // ②.创建Vector对象：Vector v=new Vector();相当于原先数组
-        Vector <Integer> vector = new Vector<Integer>();
+        Vector<Integer> vector = new Vector<Integer>();
 
         // ③.通过for(;;);或while(true)方式，给Vector中添加数组：v.addElement(Object obj);
         int maxScore = 0;
