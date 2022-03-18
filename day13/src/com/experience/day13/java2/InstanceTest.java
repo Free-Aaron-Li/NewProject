@@ -1,3 +1,11 @@
+/*
+ * @Description:
+ * @Version: JDK17
+ * @Author: Aaron.Li
+ * @Date: 2022-03-15 17:30:51
+ * @LastEditors: Aaron.Li
+ * @LastEditTime: 2022-03-18 14:20:43
+ */
 package com.experience.day13.java2;
 
 /*
@@ -9,15 +17,15 @@ package com.experience.day13.java2;
 		“a person”;
 		如果e为Student类的对象，输出：
 		“a student”
-		“a person ” 
-		如果e为Graduate类的对象，输出： 
+		“a person ”
+		如果e为Graduate类的对象，输出：
 		“a graduated student”
 		“a student”
-		“a person” 
+		“a person”
 
- * 
- * 
- * 
+ *
+ *
+ *
  */
 public class InstanceTest {
 
