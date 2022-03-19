@@ -5,7 +5,7 @@
  * @Author: Aaron.Li
  * @Date: 2022-03-15 17:30:51
  * @LastEditors: Aaron.Li
- * @LastEditTime: 2022-03-19 11:34:48
+ * @LastEditTime: 2022-03-19 13:16:51
  */
 import java.util.Scanner;
 import java.util.Vector;
@@ -54,6 +54,7 @@ public class ScoreTest {
             if (maxScore < score) {
                 maxScore = score;
             }
+
         }
         // ⑥.遍历Vector，得到每个学生的成绩，并与最大成绩相比，获取学生的成绩等级
         char level;
