@@ -39,9 +39,9 @@ public class WrapperTest {
         boolean booleanOne=Boolean.parseBoolean(strFour);
         System.out.println(booleanOne);
 
-        Double doubleOne = new Double(12.4);
-        String strThree = String.valueOf(doubleOne);
-        System.out.println(strThree);// "12.4"
+        // Double doubleOne = new Double(12.4);
+        // String strThree = String.valueOf(doubleOne);
+        // System.out.println(strThree);// "12.4"
     }
 
     /**
