@@ -7,6 +7,7 @@
     "java.project.sourcePaths": [
         "day13/src/com/experience/day13/java4",
         "Experiment/src/com/experience/experiment/class7",
-        "Experiment/src/com/experience/experiment/class6"
+        "Experiment/src/com/experience/experiment/class6",
+        "day13/src/com/experience/day13/java2"
     ]
 }
