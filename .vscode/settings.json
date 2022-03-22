@@ -6,8 +6,9 @@
     ],
     "java.project.sourcePaths": [
         "day13/src/com/experience/day13/java4",
+        "day13/src/com/experience/day13/java2",
         "Experiment/src/com/experience/experiment/class7",
         "Experiment/src/com/experience/experiment/class6",
-        "day13/src/com/experience/day13/java2"
+        ".idea/TwoTest"
     ]
 }
