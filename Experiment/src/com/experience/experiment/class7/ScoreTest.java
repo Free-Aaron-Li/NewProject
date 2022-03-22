@@ -5,7 +5,7 @@
  * @Author: Aaron.Li
  * @Date: 2022-03-15 17:30:51
  * @LastEditors: Aaron.Li
- * @LastEditTime: 2022-03-19 13:16:51
+ * @LastEditTime: 2022-03-22 17:44:48
  */
 import java.util.Scanner;
 import java.util.Vector;
@@ -31,7 +31,6 @@ public class ScoreTest {
     public static void main(String[] args) {
         // ①.实例化Scanner，用于从键盘获取学生成绩
         Scanner scanner = new Scanner(System.in);
-        // scanner.close();
 
         // ②.创建Vector对象：Vector v=new Vector();相当于原先数组
         Vector<Integer> vector = new Vector<Integer>();
@@ -54,8 +53,8 @@ public class ScoreTest {
             if (maxScore < score) {
                 maxScore = score;
             }
-
         }
+        scanner.close();
         // ⑥.遍历Vector，得到每个学生的成绩，并与最大成绩相比，获取学生的成绩等级
         char level;
         for (int i = 0; i < vector.size(); i++) {
