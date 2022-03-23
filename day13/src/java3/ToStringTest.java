@@ -5,7 +5,7 @@
  * @Date: 2022-03-10 13:16:48
  * @LastEditTime: 2022-03-10 18:22:27
  */
-package com.experience.day13.java3;
+package java3;
 
 /*
  * Object类中toString（）的使用：

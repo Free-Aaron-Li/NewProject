@@ -5,7 +5,7 @@
  * @Date: 2022-03-10 12:53:14
  * @LastEditTime: 2022-03-10 13:17:03
  */
-package com.experience.day13.java3;
+package java3;
 
 public class MyDateTest {
    public static void main(String[] args) {

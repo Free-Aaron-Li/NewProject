@@ -1,4 +1,4 @@
-package com.experience.day13.java2;
+package java2;
 /*
  * 练习：
  * 1.若子类重写了父类方法，就意味着子类里定义的方法彻底覆盖了父类里的同名方法，

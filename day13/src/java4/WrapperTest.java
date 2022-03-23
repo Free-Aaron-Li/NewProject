@@ -1,4 +1,7 @@
+package java4;
+
 import org.junit.Test;
+
 
 /*
  * @Description:
@@ -47,7 +50,7 @@ public class WrapperTest {
     /**
      * JDK 5.0新特性：自动装箱和自动拆箱
      *
-     * @param obj
+     * @param
      */
     @Test
     public void testThree() {

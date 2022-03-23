@@ -1,4 +1,4 @@
-package com.experience.day13.java3;
+package java3;
 
 /*
  * @author: Aaron.Li

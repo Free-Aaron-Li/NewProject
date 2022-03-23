@@ -27,7 +27,7 @@
  * @LastEditors: Aaron.Li
  * @LastEditTime: 2022-03-19 11:36:55
  */
-package com.experience.day13.java2;
+package java2;
 public class InstanceTest {
 
     public static void main(String[] args) {
