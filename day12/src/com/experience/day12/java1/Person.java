@@ -15,7 +15,7 @@ package java1;
  */
 public class Person {
     String name;
-    int age;
+    public int age;
     int id=1001;
     public void eat(){
         System.out.println("吃饭！");

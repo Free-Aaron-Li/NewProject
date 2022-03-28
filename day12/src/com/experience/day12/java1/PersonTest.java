@@ -1,4 +1,4 @@
-package java1;
+package com.experience.day12.java1;
 /*
  * @author: Aaron.Li
  * @date: 2022 - 02 - 27 - 下午1:36
@@ -13,6 +13,9 @@ package java1;
  * @Date 2022 - 02 - 27 - 下午1:36
  * @Version JDK17
  */
+
+import java1.Man;
+import java1.Person;
 
 /**
  * 面向对象特征之三：多态性（是一个运行时行为）
@@ -42,6 +45,6 @@ public class PersonTest {
         testOne.eat();
         testOne.walk();
         //testOne.earnMoney();(⊙﹏⊙)b
-        System.out.println(testOne.id);//1001
+        System.out.println(((Man) testOne).id);//1001
     }
 }

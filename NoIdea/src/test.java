@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /**
  * @projectName: newJavaProject
  * @package: PACKAGE_NAME
@@ -11,9 +9,9 @@ import java.util.Scanner;
  */
 public class test {
     public static void main(String[] args) {
-        System.out.println(Math.cos(Math.PI));
-        Scanner scanner=new Scanner(System.in);
-        String aStringOne=scanner.next();
-        System.out.println(aStringOne);
+      int i=0;while (i<10){
+            System.out.println(i);
+            i++;
+        }
     }
 }
