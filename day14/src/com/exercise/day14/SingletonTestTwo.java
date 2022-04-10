@@ -10,27 +10,20 @@ package com.exercise.day14;
  */
 public class SingletonTestTwo {
     public static void main(String[] args) {
-
-        Order testOne = Order.getInstance();
-        Order testTwo = Order.getInstance();
+        double[] a = new double[100];
+        Order testOne = Order.instance;
+        Order testTwo = Order.instance;
         System.out.println(testOne == testTwo);
     }
 
 }
 
+//懒汉式
 class Order {
     //1.私有化类的构造器
     private Order() {
     }
 
     //2.声明当前类对象，没有初始化
-    private static Order instance = null;
-
-    //3.声明public、static的返回当前类对象的方法
-    public static Order getInstance() {
-        if (instance == null) {
-            instance = new Order();
-        }
-        return instance;
-    }
+    public static final Order instance = null;//记住加上final，否则会导致该类既可以调用，又可以修改。
 }

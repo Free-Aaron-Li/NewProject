@@ -24,19 +24,24 @@ public class SingletonTestOne {
     public static void main(String[] args) {
         Bank testOne = Bank.getInstance();
         Bank testTwo = Bank.getInstance();
+        System.out.println(testTwo);
+        System.out.println(testOne);
+        System.out.println(testOne==testTwo);
     }
 }
 
 //饿汉式
 class Bank
 {
+    int age;
     //1.私有化类的构造器
-    private Bank() {
+    private Bank(int age) {
+        this.age=age;
     }
 
     //2.内部创建类的对象
     //4.要求此对象也必须时static的
-    private static Bank instance = new Bank();
+    private static Bank instance = new Bank(12);
 
     //3.提供公共方法，提供类的对象
     public static Bank getInstance() {

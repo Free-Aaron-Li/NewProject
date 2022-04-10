@@ -7,4 +7,14 @@
  * @version: JDK17
  */
 public class test {
+    public static void main(String[] args) {
+       testOne testOne=new testOne();
+    }
+}
+
+class testOne {
+    int age;
+
+     testOne() {
+    }
 }
