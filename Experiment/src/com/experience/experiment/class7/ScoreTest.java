@@ -1,4 +1,4 @@
-
+package com.experience.experiment.class7;
 /*
  * @Description:
  * @Version: JDK17
@@ -7,6 +7,7 @@
  * @LastEditors: Aaron.Li
  * @LastEditTime: 2022-03-22 17:44:48
  */
+
 import java.util.Scanner;
 import java.util.Vector;
 
@@ -20,7 +21,7 @@ import java.util.Vector;
  * 取向量中的元素：Object obj=v.elementAt(0);
  * 注意第一个元素的下标是0，返回值是Object类型的。
  * 计算向量的长度：v.size();
- * 若愚最高分相差10分内：A等；20分内：B等；30分内：C等；其他：D等。·
+ * 若是最高分相差10分内：A等；20分内：B等；30分内：C等；其他：D等。·
  * @version: JDK17
  * @Author: Aaron.Li
  * @Date: 2022-03-11 00:39:46
@@ -37,7 +38,7 @@ public class ScoreTest {
 
         // ③.通过for(;;);或while(true)方式，给Vector中添加数组：v.addElement(Object obj);
         int maxScore = 0;
-        for (;;) {
+        for (; ; ) {
             System.out.println("请输入学生成绩（负数代表输入结束）");
             int score = scanner.nextInt();
             // ④.当输入是负数，跳出循环
