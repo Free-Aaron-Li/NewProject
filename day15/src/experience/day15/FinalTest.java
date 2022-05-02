@@ -32,21 +32,26 @@ public class FinalTest {
     {
         LEFT=1;
     }
-public FinalTest(){
-        RIGHT=2;
-}
-    public void dowidth(){//此变量变成了常量
-      //  width=20;
+
+    public FinalTest() {
+        RIGHT = 2;
     }
+
+    public void dowidth() {//此变量变成了常量
+        //  width=20;
+    }
+
     public static void main(String[] args) {
 
     }
 }
-final class FinalA{//此类不能有子类
+
+final class FinalA {//此类不能有子类
 
 }
-class AA{
-    public void show(){//此方法不能重写
+
+class AA {
+    public void show() {//此方法不能重写
 
     }
 }
