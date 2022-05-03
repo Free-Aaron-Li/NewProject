@@ -4,7 +4,7 @@ package com.templatemethod.project;
  * @projectName: newJavaProject
  * @className: TemplateMethodTest
  * @author: AaronLi
- * @description: TODO
+ * @description:
  * @date: 2022/5/2 20:21
  * @version: JDK17
  */
