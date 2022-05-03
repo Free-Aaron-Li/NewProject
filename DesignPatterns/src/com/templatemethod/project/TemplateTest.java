@@ -1,4 +1,4 @@
-package com.designpatterns.project;
+package com.templatemethod.project;
 
 /**
  * @projectName: newJavaProject
