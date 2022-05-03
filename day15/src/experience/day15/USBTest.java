@@ -7,8 +7,11 @@ package experience.day15;
  * @description:
  * 接口的使用
  * 1.接口的使用也满足多态性
+ *
  * 2.接口，实际上定义了一种规范
+ *
  * 3.开发中，体会面向接口编程
+ *
  * @date: 2022/5/3 16:31
  * @version: JDK17
  */
