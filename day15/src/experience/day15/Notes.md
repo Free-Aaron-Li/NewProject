@@ -1,2 +1,3 @@
 - FinalTest是关于final关键字的测试
-- 
+- InterfaceTest是关于接口的应用和测试
+- USBTest同样是关于接口的应用和测试，其中添加了四种匿名实现类匿名对象的表达方式

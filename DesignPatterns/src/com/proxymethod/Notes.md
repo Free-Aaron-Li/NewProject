@@ -1,0 +1,3 @@
+# 代理模式
+NetWorkTest 关于代理模式的应用，通过被代理类Server和代理类proxyServer
+了解代理模式的运作规律，同时obsidian给出详细的代理模式的应用场景
