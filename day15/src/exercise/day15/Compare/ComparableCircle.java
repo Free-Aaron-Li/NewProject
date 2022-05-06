@@ -4,7 +4,7 @@ package exercise.day15.Compare;
  * @projectName: newJavaProject
  * @className: ComparableCircle
  * @author: AaronLi
- * @description: nothing
+ * @description: 定义ComparableCircle类，比较两个圆的大小
  * @date: 2022/5/4 19:40
  * @version: JDK17
  */
