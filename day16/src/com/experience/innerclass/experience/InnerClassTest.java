@@ -35,12 +35,14 @@ public class InnerClassTest {
         Person person = new Person();
         Person.Bird bird = person.new Bird();
         bird.sing();
+
+        bird.showName("黄鹂");
     }
 }
 
 class Person {
-    String name;
-    int age;
+    String name="小米";
+    int age=10;
 
     public void eat() {
         System.out.println("人，吃饭！");
@@ -59,13 +61,19 @@ class Person {
 
     //非静态成员内部类
     class Bird {
-        String name;
+        String name="杜鹃";
 
         public void sing() {
             System.out.println("我是一只小小鸟！");
             //内部类可以调用外部类的方法
             eat();
             Person.this.eat();//调用外部类的属性，省略Person.this
+        }
+        public void showName(String name){
+            System.out.println(name);//方法的形参
+            System.out.println(this.name);//内部类的属性
+            System.out.println(Person.this.name);//外部类的属性
+            System.out.println(age);
         }
     }
 
