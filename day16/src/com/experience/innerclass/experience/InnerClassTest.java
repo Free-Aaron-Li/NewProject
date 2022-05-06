@@ -22,7 +22,7 @@ package com.experience.innerclass.experience;
  * 4.关注如下3个问题：
  * 4.1 如何实例化成员内部类的对象
  * 4.2 如何在成员内部类中区分调用外部类的结构
- * 4.3 开发中局部内部类的使用
+ * 4.3 开发中局部内部类的使用:见《InnerClassTestOne》
  * @date: 2022/5/6 23:01
  * @version: JDK17
  */
