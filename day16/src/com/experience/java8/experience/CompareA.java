@@ -1,4 +1,4 @@
-package com.experience.java8;
+package com.experience.java8.experience;
 
 /**
  * @projectName: newJavaProject
