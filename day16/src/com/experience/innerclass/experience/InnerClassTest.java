@@ -35,7 +35,7 @@ public class InnerClassTest {
         Person person = new Person();
         Person.Bird bird = person.new Bird();
         bird.sing();
-
+        person.method();
         bird.showName("黄鹂");
     }
 }
