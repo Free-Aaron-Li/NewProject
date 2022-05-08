@@ -9,7 +9,7 @@ package com.experience.innerclass.experience;
  * @date: 2022/5/8 0:59
  * @version: JDK17
  */
-public class LocalnnerClass {
+public class LocalInnerClass {
     public void main(String[] args) {
         new AA().BB();
         new NewObject().methodTwo();
