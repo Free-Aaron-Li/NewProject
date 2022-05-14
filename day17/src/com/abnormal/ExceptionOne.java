@@ -36,9 +36,11 @@ import org.junit.jupiter.api.Test;
  * <li>4.catch中的异常类型如果没有子父类关系，则谁声明在上，谁声明在下无所谓。如果catch中的异常类型如果满足子父类关系，则要求子类一定声明在父类的上面。否则，报错。
  * <li>5.常用的异常处理方式，①返回string getMessage(); ② printStackTrace()
  * <li>6.<em>在try结构中声明的变量，在其结构外无法调用。</em>
+ * <li>7.try-catch-finally结构可以相互嵌套
  * </ul>
  * </p>
- * 体会：使用try-catch-finally处理编译时异常，是使得程序在编译时就不报错，但是运行时仍然可能报错。相当于我们使用try-catch-finally结构，将一个编译时可能出现的异常，延迟至运行时再出现。
+ * 体会1：使用try-catch-finally处理编译时异常，是使得程序在编译时就不报错，但是运行时仍然可能报错。相当于我们使用try-catch-finally结构，将一个编译时可能出现的异常，延迟至运行时再出现。<br>
+ * 体会2：开发中，由于运行时异常比较常见，所以我们通常就不针对运行时异常编写try-catch-finally，针对于编译时异常，我们一定要考虑异常的处理。
  * @date: 2022/5/14 19:50
  * @version: JDK17
  */
