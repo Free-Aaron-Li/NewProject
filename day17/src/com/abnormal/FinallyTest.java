@@ -67,7 +67,7 @@ public class FinallyTest {
     public void testThree() {
         FileInputStream files = null;
         try {
-            File file = new File("hello1.txt");
+            File file = new File("hello.txt");
             files = new FileInputStream(file);
             int data = files.read();
             while (data != -1) {
