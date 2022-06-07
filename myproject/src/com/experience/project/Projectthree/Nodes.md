@@ -7,3 +7,10 @@
   * <span style="color:#e88e82">static和final修饰符。</span>
   * <span style="color:#e88e82">特殊类的使用：包装类、抽象类、内部类。</span>
   * <span style="color:#e88e82">异常处理。</span>
+
+# 软件设计结构
+该软件由一下三个模块组成：
+![img.png](img.png)
+> View 模块为主控模块，负责菜单的显示和处理用户操作。  
+> service 模块为实体对象（Employee及其子类如程序员等）的管理模块。  
+> domain模块为Employee及其子类等JavaBean类所在的包。  
