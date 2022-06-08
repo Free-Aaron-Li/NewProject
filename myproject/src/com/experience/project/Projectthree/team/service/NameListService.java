@@ -74,7 +74,13 @@ public class NameListService {
         }
         return null;
     }
-
+    
+   /**
+    * @return: 包含所有员工对象的数组
+    * @param null 
+    * @date: 2022/6/8 9:59
+    * @description: 获取当前所有员工
+    */  
     public Employee[] getEmployees(int id) {
         return null;
     }
