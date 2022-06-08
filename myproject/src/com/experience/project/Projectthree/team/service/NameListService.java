@@ -17,11 +17,8 @@ import static com.experience.project.Projectthree.team.service.Data.*;
 public class NameListService {
     private Employee[] employees;
 
-    public NameListService() {
-    }
-
     //给employees及数组元素初始化
-    public Employee[] getAllEmployees() {
+    public NameListService() {
         employees = new Employee[EMPLOYEES.length];
         for (int i = 0; i < employees.length; i++) {
             //获取员工的类型
@@ -57,7 +54,6 @@ public class NameListService {
                     break;
             }
         }
-        return null;
     }
 
     //获取指定index上的员工设备
@@ -74,14 +70,30 @@ public class NameListService {
         }
         return null;
     }
-    
-   /**
-    * @return: 包含所有员工对象的数组
-    * @param null 
-    * @date: 2022/6/8 9:59
-    * @description: 获取当前所有员工
-    */  
-    public Employee[] getEmployees(int id) {
-        return null;
+
+    /**
+     * @param
+     * @return: 包含所有员工对象的数组
+     * @date: 2022/6/8 9:59
+     * @description: 获取当前所有员工
+     */
+    public Employee[] getAllEmployees() {
+        return employees;
+    }
+
+    /**
+     * @param id
+     * @return:指定员工的ID
+     * @date: 2022/6/8 15:58
+     * @description: 获取指定ID的员工对象
+     * @exception: 找不到指定员工 TeamException
+     */
+    public Employee getEmployee(int id) throws TeamException {
+        for (int i = 0; i < employees.length; i++) {
+            if (employees[i].getId() == id) {
+                return employees[i];
+            }
+        }
+        throw new TeamException("找不到指定的员工！！");
     }
 }
