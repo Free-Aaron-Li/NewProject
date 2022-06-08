@@ -1,51 +1,39 @@
 package com.experience.project.Projectthree.team.view;
 
 import java.util.*;
+
 /**
- * 
  * @Description 项目中提供了TSUtility.java类，可用来方便地实现键盘访问。
- * @author shkstart  Email:shkstart@126.com
- * @version 
- * @date 2019年2月12日上午12:02:58
- *
  */
 public class TSUtility {
     private static Scanner scanner = new Scanner(System.in);
+
     /**
-     * 
      * @Description 该方法读取键盘，如果用户键入’1’-’4’中的任意字符，则方法返回。返回值为用户键入字符。
-     * @author shkstart
-     * @date 2019年2月12日上午12:03:30
-     * @return
      */
-	public static char readMenuSelection() {
+    public static char readMenuSelection() {
         char c;
         for (; ; ) {
             String str = readKeyBoard(1, false);
             c = str.charAt(0);
             if (c != '1' && c != '2' &&
-                c != '3' && c != '4') {
+                    c != '3' && c != '4') {
                 System.out.print("选择错误，请重新输入：");
             } else break;
         }
         return c;
     }
-	/**
-	 * 
-	 * @Description 该方法提示并等待，直到用户按回车键后返回。
-	 * @author shkstart
-	 * @date 2019年2月12日上午12:03:50
-	 */
+
+    /**
+     * @Description 该方法提示并等待，直到用户按回车键后返回。
+     */
     public static void readReturn() {
         System.out.print("按回车键继续...");
         readKeyBoard(100, true);
     }
+
     /**
-     * 
      * @Description 该方法从键盘读取一个长度不超过2位的整数，并将其作为方法的返回值。
-     * @author shkstart
-     * @date 2019年2月12日上午12:04:04
-     * @return
      */
     public static int readInt() {
         int n;
@@ -60,12 +48,9 @@ public class TSUtility {
         }
         return n;
     }
+
     /**
-     * 
      * @Description 从键盘读取‘Y’或’N’，并将其作为方法的返回值。
-     * @author shkstart
-     * @date 2019年2月12日上午12:04:45
-     * @return
      */
     public static char readConfirmSelection() {
         char c;
@@ -81,12 +66,15 @@ public class TSUtility {
         return c;
     }
 
-    private static String readKeyBoard(int limit, boolean blankReturn) {
+    private static String readKeyBoard(int limit, boolean blankReturn) {//limit：限制输入字符串长度，blankReturn：返回空白字符串
         String line = "";
-
+        /*
+         Scanner类中的hasNext方法读取的是boolean型的值，用于检测输入是否还有其他单词，有则真无则假
+         官方解释：当执行到hasNext（）时，它会先扫描缓冲区中是否有字符，有则返回true,继续扫描。直到扫描为空，这时并不返回false,而是将方法阻塞，等待你输入内容然后继续扫描。
+         */
         while (scanner.hasNextLine()) {
-            line = scanner.nextLine();
-            if (line.length() == 0) {
+            line = scanner.nextLine();//将从键盘上读取到的内容赋给line,为字符串类型
+            if (line.length() == 0) {//当作回车逻辑
                 if (blankReturn) return line;
                 else continue;
             }
