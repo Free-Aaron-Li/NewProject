@@ -12,7 +12,7 @@ import com.experience.project.Projectthree.team.service.Status;
  */
 public class Programmer extends Employee {
     private int memberId;//团队id
-    private Status status;//状态
+    private Status status=Status.FREE;//状态
     private Equipment equipment;//设备
 
     public Programmer() {
@@ -46,5 +46,10 @@ public class Programmer extends Employee {
 
     public void setEquipment(Equipment equipment) {
         this.equipment = equipment;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\t程序员\t" + status + "\t\t\t\t\t" + equipment.getDescription();
     }
 }

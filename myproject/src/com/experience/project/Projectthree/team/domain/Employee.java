@@ -56,4 +56,15 @@ public class Employee {
         this.salary = salary;
     }
 
+    /**
+     * @description:子类调用父类的toString方法
+     */
+    public String getDetails() {
+        return id + "\t" + name + "\t" + age + "\t" + salary + "\t";
+    }
+
+    @Override
+    public String toString() {
+        return id + "\t" + name + "  \t" + age + "\t" + salary + "\t";
+    }
 }

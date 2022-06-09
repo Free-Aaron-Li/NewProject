@@ -22,4 +22,9 @@ public class Status { //枚举
     public String getNAME() {
         return NAME;
     }
+
+    @Override
+    public String toString() {
+        return NAME;
+    }
 }

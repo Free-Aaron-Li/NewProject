@@ -26,4 +26,7 @@ public class Architect extends Designer {
     public void setStock(int stock) {
         this.stock = stock;
     }
+    public String toString(){
+        return getDetails()+"\t架构师\t"+ getStatus()+"\t"+getBonus()+"\t"+stock+"\t"+getEquipment().getDescription();
+    }
 }

@@ -26,4 +26,7 @@ public class Designer extends Programmer {
     public void setBonus(double bonus) {
         this.bonus = bonus;
     }
+    public String toString(){
+        return getDetails()+"\t设计师\t"+ getStatus()+"\t"+bonus+"\t\t\t"+getEquipment().getDescription();
+    }
 }
