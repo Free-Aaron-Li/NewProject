@@ -13,7 +13,7 @@ public class TestTwo {
         ResultSet resultSet = null;
         try {
             // 一、装载驱动
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
             // 二、建立数据库的连接
             connection = DriverManager.getConnection(
