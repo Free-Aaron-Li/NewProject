@@ -26,7 +26,12 @@ public class Architect extends Designer {
     public void setStock(int stock) {
         this.stock = stock;
     }
-    public String toString(){
-        return getDetails()+"\t架构师\t"+ getStatus()+"\t"+getBonus()+"\t"+stock+"\t"+getEquipment().getDescription();
+
+    public String toString() {
+        return getDetails() + "\t架构师\t" + getStatus() + "\t" + getBonus() + "\t" + stock + "\t" + getEquipment().getDescription();
+    }    //团队成员输出
+
+    public String getDetailsForTeam() {
+        return getMemberId() + "/" + getId() + "\t" + getName() + "\t" + getAge() + "\t" + getSalary() + "\t架构师\t" + getBonus()+"\t"+getStock();
     }
 }

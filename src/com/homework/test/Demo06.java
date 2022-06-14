@@ -12,7 +12,7 @@ public class Demo06 {
     private static int tryReturn() {
         int num = 10;
         try {
-            ++num;
+            num++;
             System.out.println("in try block : num=" + num);
             return num;
         } catch (Exception e) {

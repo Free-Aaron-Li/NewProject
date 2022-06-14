@@ -152,6 +152,5 @@ public class TeamService {
         }
         //最后一个数组设置为null
         team[--total] = null;
-
     }
 }

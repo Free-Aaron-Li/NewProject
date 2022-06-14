@@ -11,6 +11,7 @@ package com.experience.project.Projectthree.team.domain;
 public class Designer extends Programmer {
     private double bonus;//奖金
 
+    byte b=127;
     public Designer() {
     }
 
@@ -26,7 +27,13 @@ public class Designer extends Programmer {
     public void setBonus(double bonus) {
         this.bonus = bonus;
     }
-    public String toString(){
-        return getDetails()+"\t设计师\t"+ getStatus()+"\t"+bonus+"\t\t\t"+getEquipment().getDescription();
+
+    public String toString() {
+        return getDetails() + "\t设计师\t" + getStatus() + "\t" + bonus + "\t\t\t\t\t" + getEquipment().getDescription();
+    }
+
+    //团队成员输出
+    public String getDetailsForTeam() {
+        return getMemberId() + "/" + getId() + "\t" + getName() + "\t" + getAge() + "\t" + getSalary() + "\t设计师\t" + getBonus();
     }
 }
