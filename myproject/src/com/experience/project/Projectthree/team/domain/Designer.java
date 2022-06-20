@@ -29,11 +29,11 @@ public class Designer extends Programmer {
     }
 
     public String toString() {
-        return getDetails() + "\t设计师\t" + getStatus() + "\t" + bonus + "\t\t\t\t\t" + getEquipment().getDescription();
+        return getDetails() + "设计师\t" + getStatus() + "\t" + bonus + "\t\t\t" + getEquipment().getDescription();
     }
 
     //团队成员输出
     public String getDetailsForTeam() {
-        return getMemberId() + "/" + getId() + "\t" + getName() + "\t" + getAge() + "\t" + getSalary() + "\t设计师\t" + getBonus();
+        return getTeamBaseDetail() + "设计师\t" + getBonus();
     }
 }

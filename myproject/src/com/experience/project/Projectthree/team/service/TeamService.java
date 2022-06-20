@@ -90,18 +90,23 @@ public class TeamService {
         }
 
         //六、团队中至多只能有一名架构师        if(programmer instanceof Architect){
-        if (numOfArch >= 1) {
-            throw new TeamException("团队中至多只能有一名架构师！！");
+        if (programmer instanceof Architect) {
+            if (numOfArch >= 1) {
+                throw new TeamException("团队中至多只能有一名架构师！！");
+            }
         }
         //七、团队中至多只能有两名设计师
-        else if (numOfDes >= 2) {
-            throw new TeamException("团队中至多只能有两名设计师！！");
+        else if (programmer instanceof Designer) {
+            if (numOfDes >= 2) {
+                throw new TeamException("团队中至多只能有两名设计师！！");
+            }
         }
         //八、团队中至多只能有三名程序员
-        else if (numOfPro >= 3) {
-            throw new TeamException("团队中至多只能有三名程序员！！");
+        else if(programmer instanceof Programmer){
+            if (numOfPro >= 3) {
+                throw new TeamException("团队中至多只能有三名程序员！！");
+            }
         }
-
         //九、将programmer添加到现有的team中
         team[total++] = programmer;
         //十、将programmer的属性赋值
@@ -143,7 +148,7 @@ public class TeamService {
             }
         }
         //未找到指定memberId的情况
-        if(i==total){
+        if (i == total) {
             throw new TeamException("找不到指定memberId的员工，删除失败！！");
         }
         //覆盖

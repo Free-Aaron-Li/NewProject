@@ -162,9 +162,6 @@ public class GameWin extends JFrame {
             //gImage.drawImage(GameUtils.explodeOneImg, bossObj.getX()+30, bossObj.getY(), null);
             repaint();
             GameUtils.drawWord(gImage, "成功通过，牛逼！", Color.GREEN, 40, 50, 300);
-//            gImage.setColor(Color.RED);
-//            gImage.setFont(new Font("姑苏行书", Font.BOLD, 40));
-//            gImage.drawString("游戏失败 垃圾！", 50, 300);//游戏失败 x:110,y=300
         }
 
         //设置分数面板

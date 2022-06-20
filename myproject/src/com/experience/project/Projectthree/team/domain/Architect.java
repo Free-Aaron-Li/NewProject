@@ -28,10 +28,10 @@ public class Architect extends Designer {
     }
 
     public String toString() {
-        return getDetails() + "\t架构师\t" + getStatus() + "\t" + getBonus() + "\t" + stock + "\t" + getEquipment().getDescription();
+        return getDetails() + "架构师\t" + getStatus() + "\t" + getBonus() + "\t" + stock + "\t" + getEquipment().getDescription();
     }    //团队成员输出
 
     public String getDetailsForTeam() {
-        return getMemberId() + "/" + getId() + "\t" + getName() + "\t" + getAge() + "\t" + getSalary() + "\t架构师\t" + getBonus()+"\t"+getStock();
+        return getTeamBaseDetail() + "架构师\t" + getBonus()+"\t\t"+getStock();
     }
 }
