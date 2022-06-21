@@ -28,7 +28,7 @@ import java.util.List;
  */
 public class GameUtils {
     //背景图片
-    public static Image bgImg = Toolkit.getDefaultToolkit().getImage("/home/Aaron-Li/IDEA_Workspace/untitled1/imgs/bg.jpg");
+    public static Image bgImg = Toolkit.getDefaultToolkit().getImage("/home/Aaron-Li/IDEA_Workspace/untitled1/imgs/space.jpg");
     //boss图片
     public static Image bossImg = Toolkit.getDefaultToolkit().getImage("/home/Aaron-Li/IDEA_Workspace/untitled1/imgs/boss.png");
     //爆炸图片

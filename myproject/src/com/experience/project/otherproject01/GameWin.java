@@ -166,10 +166,10 @@ public class GameWin extends JFrame {
 
         //设置分数面板
         if (state == 1) {
-            GameUtils.drawWord(gImage, score + "分", Color.GREEN, 25, 0, 60);
+            GameUtils.drawWord(gImage, score + "分", Color.GREEN, 18, 0, 60);
             //GameUtils.drawWord(gImage, "生命,20,8,55);
         }
-        g.drawImage(offScreenImage, 0, 0, null);
+        g.drawImage(offScreenImage, 0, 10, null);
         count++;
         System.out.println(GameUtils.gameObjList.size());
     }
