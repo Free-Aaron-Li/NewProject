@@ -278,7 +278,7 @@ public class GameWin extends JFrame {
         }
 
         //当敌方战斗机被击毁数量超过100架，敌方Boss才会出现
-        if (enemyCount > 1 && bossObj == null) {
+        if (enemyCount > 100 && bossObj == null) {
             bossObj = new BossObj(GameUtils.bossImg, 250, 0, 100, 76, 5, this);
             GameUtils.gameObjList.add(bossObj);
         }
