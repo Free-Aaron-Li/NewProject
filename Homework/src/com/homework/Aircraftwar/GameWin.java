@@ -6,6 +6,7 @@ import com.homework.Aircraftwar.utils.GameUtils;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.Serial;
 
 import static com.homework.Aircraftwar.utils.GameUtils.enemyObjList;
 import static java.awt.Color.RED;
@@ -19,6 +20,9 @@ import static java.awt.Color.RED;
  * @version: JDK17
  */
 public class GameWin extends JFrame {
+
+    @Serial
+    private static final long serialVersionUID = 2892718312041969750L;
 
     //设置窗口
     public void launch() {
