@@ -1,14 +1,14 @@
-package com.homework.aircraftwar;
+package aircraftwar;
 
-import com.homework.aircraftwar.obj.*;
-import com.homework.aircraftwar.utils.GameUtils;
+import aircraftwar.obj.*;
+import aircraftwar.utils.GameUtils;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.Serial;
 
-import static com.homework.aircraftwar.utils.GameUtils.enemyObjList;
+import static aircraftwar.utils.GameUtils.enemyObjList;
 import static java.awt.Color.RED;
 
 /**

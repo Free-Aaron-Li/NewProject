@@ -1,7 +1,7 @@
-package com.homework.aircraftwar.obj;
+package aircraftwar.obj;
 
-import com.homework.aircraftwar.GameWin;
-import com.homework.aircraftwar.utils.GameUtils;
+import aircraftwar.GameWin;
+import aircraftwar.utils.GameUtils;
 
 import java.awt.*;
 

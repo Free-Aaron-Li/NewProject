@@ -1,7 +1,6 @@
-package com.homework.aircraftwar.utils;
+package aircraftwar.utils;
 
-import com.homework.aircraftwar.obj.*;
-
+import aircraftwar.obj.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;

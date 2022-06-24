@@ -1,4 +1,4 @@
-package com.homework.aircraftwar.obj;
+package aircraftwar.obj;
 
 import java.awt.*;
 
@@ -11,9 +11,6 @@ import java.awt.*;
  * @version: JDK17
  */
 public class BgObj extends GameObj{
-    public BgObj() {
-        super();
-    }
 
     public BgObj(Image img, int x, int y, double speed) {
         super(img, x, y, speed);

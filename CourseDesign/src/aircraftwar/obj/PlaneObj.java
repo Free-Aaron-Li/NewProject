@@ -1,6 +1,6 @@
-package com.homework.aircraftwar.obj;
+package aircraftwar.obj;
 
-import com.homework.aircraftwar.GameWin;
+import aircraftwar.GameWin;
 
 import java.awt.*;
 import java.awt.event.KeyAdapter;
