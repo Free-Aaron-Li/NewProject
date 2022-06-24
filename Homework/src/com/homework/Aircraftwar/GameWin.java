@@ -6,6 +6,7 @@ import com.homework.Aircraftwar.utils.GameUtils;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.Serial;
 
 import static com.homework.Aircraftwar.utils.GameUtils.enemyObjList;
 import static java.awt.Color.RED;
@@ -19,6 +20,9 @@ import static java.awt.Color.RED;
  * @version: JDK17
  */
 public class GameWin extends JFrame {
+
+    @Serial
+    private static final long serialVersionUID = 2892718312041969750L;
 
     //设置窗口
     public void launch() {
@@ -85,7 +89,7 @@ public class GameWin extends JFrame {
 
     /**
      * @date: 2022/6/21 下午5:00
-     * @description: 双缓存技术
+     * @description: 双缓冲技术
      * java双缓冲技术是一种解决闪屏的技术，首先来看看闪屏是因为什么产生的？
      * <p>
      * 图像画到屏幕上的过程是：AWT->update()->paint()，有时候通过repaint()来调用paint()，其实也是产生了一个
@@ -96,7 +100,7 @@ public class GameWin extends JFrame {
      * </p>
      * <p>
      * Java中，可以通过createImage()创建一幅屏幕外的图像(存在内存中)，可以通过Image.getGraphics()来获取一个用来绘制屏幕外图像的画笔。
-     * 在第二幅图片绘画之前必须清空第一幅图片，要不两张图片就会重合产生交叉，这也就是update()清屏的原因。
+     * 在第二幅图片绘画之前必须清空第一幅图片，要不然两张图片就会重合产生交叉，这也就是update()清屏的原因。
      * <p>
      * 但是不能直接在屏幕上清屏，所以，可以通过gImage.clearRect(0, 0, 0，0),将前一幅图片在内存中清空，或者gImage.fillRect(0,0,0,0)，将前一副图片覆盖，这样就不会影响到屏幕了，
      * 然后再将图像画到屏幕外的图像上，最后将将屏幕外的图像画到屏幕上，就实现了画图的功能。
@@ -151,7 +155,7 @@ public class GameWin extends JFrame {
 
     @Override
     public void paint(Graphics g) {
-        //双缓存技术
+        //双缓冲技术
         if (offScreenImage == null) {
             offScreenImage = createImage(window_width, window_height);
         }

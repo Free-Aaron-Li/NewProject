@@ -20,7 +20,7 @@ public class ExplodeObj extends GameObj {
 
     static {
         for (int i = 0; i < pictures.length; i++) {
-            pictures[i] = Toolkit.getDefaultToolkit().getImage("/home/Aaron-Li/IDEA_Workspace/untitled1/imgs/explode/e" + (i + 1) + ".gif");
+            pictures[i] = Toolkit.getDefaultToolkit().getImage("D:\\VScodeWorkspace\\newJavaProject\\imgs\\explode\\e" + (i + 1) + ".gif");
         }
     }
 
