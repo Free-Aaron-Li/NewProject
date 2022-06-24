@@ -21,7 +21,7 @@ public class GameUtils {
      * @description: 获取游戏图片
      */
 
-    //获取背景图片（2000*2666）.\..\..\..\..\..\..\imgs ./../../../../../../imgs
+    //获取背景图片（2000*2666）
     public static Image bgImg = Toolkit.getDefaultToolkit().getImage("D:\\VScodeWorkspace\\newJavaProject\\imgs\\space.jpg");
     //获取Boss图片（100*76）
     public static Image bossImg = Toolkit.getDefaultToolkit().getImage("D:\\VScodeWorkspace\\newJavaProject\\imgs\\boss.png");
