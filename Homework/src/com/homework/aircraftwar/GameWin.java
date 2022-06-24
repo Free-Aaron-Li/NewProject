@@ -1,14 +1,14 @@
-package com.homework.Aircraftwar;
+package com.homework.aircraftwar;
 
-import com.homework.Aircraftwar.obj.*;
-import com.homework.Aircraftwar.utils.GameUtils;
+import com.homework.aircraftwar.obj.*;
+import com.homework.aircraftwar.utils.GameUtils;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.Serial;
 
-import static com.homework.Aircraftwar.utils.GameUtils.enemyObjList;
+import static com.homework.aircraftwar.utils.GameUtils.enemyObjList;
 import static java.awt.Color.RED;
 
 /**
@@ -282,7 +282,7 @@ public class GameWin extends JFrame {
         }
 
         //当敌方战斗机被击毁数量超过100架，敌方Boss才会出现
-        if (enemyCount > 100 && bossObj == null) {
+        if (enemyCount > 1 && bossObj == null) {
             bossObj = new BossObj(GameUtils.bossImg, 250, 0, 100, 76, 5, this);
             GameUtils.gameObjList.add(bossObj);
         }

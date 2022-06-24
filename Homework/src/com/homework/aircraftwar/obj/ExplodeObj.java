@@ -1,4 +1,6 @@
-package com.homework.Aircraftwar.obj;
+package com.homework.aircraftwar.obj;
+
+import com.homework.aircraftwar.utils.GameUtils;
 
 import java.awt.*;
 
@@ -20,7 +22,7 @@ public class ExplodeObj extends GameObj {
 
     static {
         for (int i = 0; i < pictures.length; i++) {
-            pictures[i] = Toolkit.getDefaultToolkit().getImage("D:\\VScodeWorkspace\\newJavaProject\\imgs\\explode\\e" + (i + 1) + ".gif");
+            pictures[i] = Toolkit.getDefaultToolkit().getImage(GameUtils.class.getClassLoader().getResource("imgs/explode/e"+(i+1)+".gif"));
         }
     }
 

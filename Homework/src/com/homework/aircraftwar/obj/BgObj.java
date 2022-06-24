@@ -1,4 +1,4 @@
-package com.homework.Aircraftwar.obj;
+package com.homework.aircraftwar.obj;
 
 import java.awt.*;
 
