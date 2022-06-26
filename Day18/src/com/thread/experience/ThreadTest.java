@@ -1,6 +1,8 @@
+package com.thread.experience;
+
 /**
  * @projectName: untitled1
- * @className: ThreadTest
+ * @className: com.thread.experience.ThreadTest
  * @author: AaronLi
  * @description: 多线程的创建
  * <ol type="I" start="1">
