@@ -24,7 +24,7 @@ class MyThread extends Thread {
         for (int i = 0; i < 100; i++) {
             if (i % 2 == 0) {
                 k++;
-                System.out.println("第" + k + "个偶数为" + i);
+                System.out.println(Thread.currentThread().getName() + "：" + "第" + k + "个偶数为" + i);
             }
         }
     }
@@ -37,5 +37,26 @@ public class ThreadTest {
 
         //4.通过此对象调用start()方法:①启动当前线程②调用当前线程的run()。
         myThread.start();
+
+        //问题1：我们不能通过直接调用run()的方式启动线程
+        //只是调用run()方法，并未创建一个新的线程
+        // myThread.run();
+
+        //问题2：再启动一个线程，遍历100以内的偶数
+        //不可以让已经start()的线程再去执行，会报IllegalThreadStateException错误
+        //myThread.start();
+        //需要重新创建一个线程的对象
+        MyThread myThread1 = new MyThread();
+        myThread1.start();
+
+        //如下操作仍然是在main线程下执行
+        int k = 0;
+        for (int i = 0; i < 100; i++) {
+            if (i % 2 != 0) {
+                k++;
+                //Thread.currentThread().getName()：获取当前线程名
+                System.out.println(Thread.currentThread().getName() + "：" + "第" + k + "个奇数为" + i);
+            }
+        }
     }
 }
