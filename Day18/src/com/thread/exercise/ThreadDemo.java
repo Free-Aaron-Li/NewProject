@@ -39,13 +39,10 @@ public class ThreadDemo {
         //myThread2.start();
 
         //创建Thread类的匿名子类
-        new Thread() {
-            @Override
-            public void run() {
-                for (int i = 0; i < 100; i++) {
-                    System.out.println(Thread.currentThread().getName() + ":" + "奇数" + i);
-                }
+        new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
+                System.out.println(Thread.currentThread().getName() + ":" + "奇数" + i);
             }
-        }.start();
+        }).start();
     }
 }
