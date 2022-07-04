@@ -3,8 +3,10 @@ package com.thread.experience;
 /**
  * @projectName: untitled1
  * @className: ThreadMethodTest
+ * @link:
  * @author: AaronLi
- * @description: <p>测试Thread中的常用方法</p>
+ * @description:
+ * <p>测试Thread中的常用方法</p>
  * <ol type="1" start="1">
  *     <li>start()：启动当前线程；调用当前线程的run()</li>
  *     <li>run()：通常需要重写Thread类中的此方法，将创建线程要执行的操作声明在此方法中</li>
